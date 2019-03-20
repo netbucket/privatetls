@@ -35,8 +35,8 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 The call to `StartHTTPSListener` will generate a self-signed RSA based TLS certificate with a random 2048 bit key. The certificate is valid for 1 year.
 
 # More control
-If you want more control over the TLS configuration, use `privatetls.NewTLSConfig()` to
-generate a certificate and return it back to you via an instance of `tls.Config` struct:
+If you want more control over the TLS configuration, use `privatetls.NewCert()` to
+generate a certificate and return it back to you:
 ```go
 package main
 
