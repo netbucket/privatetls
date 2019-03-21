@@ -7,7 +7,7 @@ This library is meant for use with private HTTPS services, where the use of a tr
 For all other situations, please *do not use this library*. Instead, use any available 
 commercial CA providers, or use the free service from  [Let's Encrypt](https://letsencrypt.org/).
 
-# Quick Start
+## Quick Start
 The easiest way to generate a certificate and start the server, is to use the 
 `privatetls.StartHTTPSListener()` function:
 
@@ -34,7 +34,7 @@ func helloHandler(w http.ResponseWriter, r *http.Request) {
 ```
 The call to `StartHTTPSListener` will generate a self-signed RSA based TLS certificate with a random 2048 bit key. The certificate is valid for 1 year.
 
-# More control
+## More control
 If you want more control over the TLS configuration, use `privatetls.NewCert()` to
 generate a certificate and return it back to you:
 ```go
