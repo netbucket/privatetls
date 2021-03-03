@@ -1,3 +1,3 @@
-module github.com/netbucket/privatetls/v0.1.0
+module github.com/netbucket/privatetls
 
-go 1.12
+go 1.16
